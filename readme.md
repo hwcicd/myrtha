@@ -1,6 +1,7 @@
 # `iverilog`
 
 https://iverilog.fandom.com/wiki/Installation_Guide
+
     - git clone https://github.com/steveicarus/iverilog.git
     - cd iverilog
     - git checkout --track -b v11-branch origin/v11-branch
@@ -15,6 +16,7 @@ https://iverilog.fandom.com/wiki/Installation_Guide
 # `daikon`
 
 https://plse.cs.washington.edu/daikon/
+
     - wget https://plse.cs.washington.edu/daikon/download/daikon-5.8.20.tar.gz
     - tar -xvzf daikon-5.8.20.tar.gz
     - rm daikon-5.8.20.tar.gz
@@ -25,6 +27,7 @@ https://plse.cs.washington.edu/daikon/
 ## Optional -  Test Daikon on known files
 
 https://github.com/cd-public/Isadora/tree/master/model/multi/outs/dfiles
+
     - wget https://github.com/cd-public/Isadora/raw/refs/heads/master/model/multi/outs/dfiles/1.dtrace
     - wget https://github.com/cd-public/Isadora/raw/refs/heads/master/model/multi/outs/dfiles/universal.decls
     - java -cp $PWD/daikon.jar daikon.Daikon 1.dtrace universal.decls
@@ -32,6 +35,7 @@ https://github.com/cd-public/Isadora/tree/master/model/multi/outs/dfiles
 # `testbench.vcd`
 
 https://github.com/YosysHQ/picorv32
+
     - git clone https://github.com/YosysHQ/picorv32.git
     - cd picov32
     - make test_ez_vcd
@@ -39,6 +43,7 @@ https://github.com/YosysHQ/picorv32
 
 # Build Spec
 
-GitHub TBA
+This repository
+
     - python3 rtlkon.py ../picorv32/testbench.vcd
     - java -cp ../daikon/daikon-5.8.20/daikon.jar daikon.Daikon testbench.decls testbench.dtrace
