@@ -1,0 +1,12 @@
+name: Deploy
+  
+on: push
+
+jobs:
+  build-myrtha:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+    - uses: actions/checkout@v4
+    - run: make
