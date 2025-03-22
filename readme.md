@@ -1,4 +1,4 @@
-*Continously Integrate Hardware to Continously Deploy and Hardware Spec*
+*Continously Integrate Hardware to Continously Deploy a Hardware Spec*
 
 # `iverilog`
 
