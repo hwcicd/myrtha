@@ -30,3 +30,5 @@ RUN git clone https://github.com/steveicarus/iverilog.git && \
     make install && \
     cd && \
     rm -rf iverilog
+
+COPY rtlkon.py .
