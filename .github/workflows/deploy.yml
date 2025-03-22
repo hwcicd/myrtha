@@ -8,5 +8,7 @@ jobs:
     permissions:
       packages: write
     steps:
+    - name: Log in to ghcr.io
+      run: echo "${{ secrets.GHCR_TOKEN }}" | podman login ghcr.io -u ${{ github.actor }} --password-stdin
     - uses: actions/checkout@v4
     - run: make
