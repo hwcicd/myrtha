@@ -46,7 +46,6 @@ def vars_to_decls(vars, name):
     vars_to_tick(vars)
 
 def tick(fptr, vals):
-    to_int = lambda val: int(val, 2) if val.isdigit() else -1 # x, z
     line = fptr.readline()
     while line and "#" != line[0]:
         # Two cases, words and bits
@@ -55,7 +54,7 @@ def tick(fptr, vals):
         else: # bit
             val, var = line[0], line[1:].strip()
         if var in vals:
-            vals[var] = to_int(val)
+            vals[var] = int(val, 2) if val.isdigit() else -1
         line = fptr.readline()
     return line, vals
 
