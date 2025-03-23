@@ -1,5 +1,7 @@
 # `iverilog`
 
+Or "Icarus Verilog"
+
 https://iverilog.fandom.com/wiki/Installation_Guide
 
     git clone https://github.com/steveicarus/iverilog.git
