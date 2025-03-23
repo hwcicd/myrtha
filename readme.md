@@ -46,7 +46,7 @@ https://github.com/YosysHQ/picorv32
 
 # Build Spec
 
-This repository. Mind your paths.
+This repository. Paths are setup dependent.
 
     python3 rtlkon.py testbench.vcd
     java -cp /daikon.jar daikon.Daikon testbench.decls testbench.dtrace
