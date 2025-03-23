@@ -35,6 +35,7 @@ https://github.com/cd-public/Isadora/tree/master/model/multi/outs/dfiles
 # `testbench.vcd`
 
 https://github.com/YosysHQ/picorv32
+*We now maintain [our own, simplified fork](https://github.com/hwcicd/picorv32), for performance*
 
     git clone https://github.com/YosysHQ/picorv32.git
     cd picov32
@@ -45,5 +46,5 @@ https://github.com/YosysHQ/picorv32
 
 This repository.
 
-    python3 rtlkon.py ../picorv32/testbench.vcd
-    java -cp ../daikon/daikon-5.8.20/daikon.jar daikon.Daikon testbench.decls testbench.dtrace
+    python3 rtlkon.py testbench.vcd
+    java -cp /daikon.jar daikon.Daikon testbench.decls testbench.dtrace
