@@ -13,7 +13,7 @@ https://iverilog.fandom.com/wiki/Installation_Guide
     sudo make install
     cd ..
 
-# `daikon`
+# `daikon` the "Dynamic invariant detector"
 
 https://plse.cs.washington.edu/daikon/
 
