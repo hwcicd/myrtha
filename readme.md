@@ -1,4 +1,4 @@
-# `iverilog`
+# `iverilog` or "Icarus Verilog"
 
 https://iverilog.fandom.com/wiki/Installation_Guide
 
