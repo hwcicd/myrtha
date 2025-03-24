@@ -24,6 +24,7 @@ RUN mv daikon-5.8.20/daikon.jar . && \
 # Icarus, to generate .vcd, recommends build-from-source
 RUN git clone https://github.com/steveicarus/iverilog.git && \
     cd iverilog && \
+    git checkout --track -b v11-branch origin/v11-branch && \
     sh autoconf.sh && \
     ./configure && \
     make && \
